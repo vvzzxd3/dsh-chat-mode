@@ -1,0 +1,16 @@
+{
+  "name": "@local/dsh-chat-mode",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A conversation-only preset for DeepSeek Harness.",
+  "engines": { "dsh": "0.2.2-rc.5" },
+  "exports": {
+    ".": "./index.js",
+    "./policy": "./policy.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "policy.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md", "README_en.md"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

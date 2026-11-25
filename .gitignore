@@ -1,0 +1,7 @@
+# Local integration test; keep it out of version control.
+/test.cjs
+
+# Local dependencies, package archives, and Cordis resolver cache.
+/node_modules/
+/*.tgz
+/.cordis/

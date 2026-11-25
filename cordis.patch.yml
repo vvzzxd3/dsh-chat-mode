@@ -1,0 +1,19 @@
+- insert:
+    - id: chat-mode-request-boundary
+      name: '@local/dsh-chat-mode'
+    - id: preset-chat
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: chat
+        name: '会话模式'
+        description: '只发送当前对话，不附加 Harness 系统提示词或自动上下文，也不调用工具。'
+        order: 5
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: ''
+              complete: true
+              includeRuntimeContext: false
+          - id: chat-mode-policy
+            name: '@local/dsh-chat-mode/policy'

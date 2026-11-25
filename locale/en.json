@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Conversation mode",
+    "description": "The model receives only the current conversation, with no Harness system prompt, automatic context, or tools. Other presets and the default are unchanged."
+  }
+}
